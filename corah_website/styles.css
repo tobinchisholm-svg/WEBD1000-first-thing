@@ -1,13 +1,32 @@
+html {
+    background-color: black;
+}
+
 .header-container {
     display: flex;
     align-items: center;
-    border-style:solid;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
 }
+
 .logo-container {
-    display: inline-block;
-    border-style: solid;
+    display: : flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
+
 .nav-container {
-    display: inline-block;
+    
+}
+
+
+
+.logo-wordmark {
+    width: 220;
+
+}
+
+.logo-brand {
+
 }
