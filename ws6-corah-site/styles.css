@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #7B458F; /* CORAH brand purple */
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #F9FAFB;
+  padding: 1rem;
+  border-bottom: 2px solid #7B458F;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav a {
+  margin-right: 1rem;
+}
+
+p {
+  padding: 10px;
+  border: 2px solid #E5E7EB;
+  margin: 20px 0;
+}
