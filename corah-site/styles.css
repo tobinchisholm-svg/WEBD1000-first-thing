@@ -1,7 +1,60 @@
 html {
-    background-color: white;
+    background-color:white;
+    font-family: "Open Sans";
 }
 
 body {
-    background-color: black;
+    background-color:white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+.separator {
+    border-style: solid;
+    border-top: 2px;
+    border-color: #7b458f;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.nav-pill {
+    border-style: solid;
+    border-color: #7b458f;
+    border-width: 2px;
+    color: white;
+    font-size: 20px;
+    border-radius: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: #7b458f;
+    color: white;
 }
