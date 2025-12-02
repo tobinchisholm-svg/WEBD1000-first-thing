@@ -1,9 +1,67 @@
+html {
+    background-color:white;
+    font-family: "Open Sans";
+}
+
+body {
+    background-color:white;
+}
+
 header {
-  display: flex;                 /* enable flexbox */
-  justify-content: space-between;/* logo left, nav right */
-  align-items: center;           /* vertical centering */
-  padding: 1.5rem;
-  flex-wrap: wrap;               /* allows wrapping on small screens */
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+.separator {
+    border-style: solid;
+    border-top: 2px;
+    border-color: #7b458f;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.header-container{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.nav-pill {
+    border-style: solid;
+    border-color: #7b458f;
+    border-width: 2px;
+    color: white;
+    font-size: 20px;
+    border-radius: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: #7b458f;
+    color: white;
 }
 
 .nav-container ul {
@@ -24,12 +82,16 @@ header {
   .hero { grid-template-columns: 1fr 1fr; }
 }
 
+
 footer {
-  background-color: #7b458f;
+   background-color: #7b458f;
   color: #fff;
   padding: 1.5rem;
   text-align: center;
-}
+
+  position: relative;   /* Default positioning */
+  margin-top: 50px;     /* Push it down a bit */
+
 
 @media (min-width: 768px) {
   .footer-container {
@@ -46,3 +108,10 @@ footer {
   .hero { grid-template-columns: 1fr; }
 }
 
+
+
+
+img[src="images/hero-image.jpg"] {
+  width: 300px;    /* Make it smaller */
+  height: auto;    /* Keep aspect ratio */
+}
